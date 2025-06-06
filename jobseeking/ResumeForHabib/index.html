@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is Justin's Resume">
+    <title>Justin's Resume</title>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:sans-serif;
+            padding:0;
+            margin-top:1rem;
+            margin-bottom:1rem;
+            margin-left:auto;
+            margin-right:auto;
+            width:80%;
+            max-width:100ch;
+            display:grid;
+            grid-template-columns:1fr 3fr;
+        }
+
+        body>div:first-of-type{
+            background-color:lightgrey;
+        }
+
+        body>div:last-of-type{
+            background-color:lightpink;
+            width:100%;
+            overflow:auto;
+        }
+
+        
+        body>div{
+            padding:2rem;
+        }
+
+        progress{
+            width:100px;
+        }
+
+        ul{
+            margin-block-start:0;
+            padding-block-start:0;
+            padding-inline-start:0;
+            list-style-position:inside;
+        }
+
+
+        li{
+            margin-top:1rem;
+        }
+
+        li::marker{
+            content:'';
+        }
+    
+        img{
+            width:100%;
+            max-width:20rem;
+        }
+
+        .contact,.languages,.soft-skills, .hard-skills{
+            display:grid;
+            grid-template-columns: min-content auto;
+            align-items:top;
+            gap:1rem;
+        }
+
+        .hamburger{
+            width:fit-content;
+            height:fit-content;
+            background-color:transparent;
+            border:none;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div>
+        <section>
+            <h2>Contact</h2>
+
+            <div class="contact">
+                <div id="phone">📞</div>
+                <div>
+                    <a href="tel:+0182307236" aria-label="Phone number is + 6 0 1 8 2 3 0 7 2 3 6">0182307236</a>
+                </div>
+
+                <div>✉</div>
+                <div>
+                    <a href="mailto: beibei031119@gmail.com" aria-label="Email is beibei031119@gmail.com">beibei031119@gmail.com</a>
+                </div>
+                <div>🏠</div>
+                <div>PV13, 9, Jalan Danau Saujana 1, Taman Danau Kota, 53300 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Personal Details</h2>
+            <div>
+                Date of birth :19 November 2003
+            </div>
+            <div style="margin-top:1rem;">
+                Nationality : Malaysian
+            </div>
+            <div  style="margin-top:1rem;">
+                Marital Status : Single
+            </div>
+            <div  style="margin-top:1rem;">Gender : Male</div>
+        </section>
+
+        <section>
+            <h2>Literate Languages</h2>
+            <div class="languages">
+                <div>English</div>
+                <progress min="0" max="10" value="7"></progress>
+                <div>Malay</div>
+                <progress min="0" max="10" value="3"></progress>
+            </div>
+        </section>
+
+        <section>
+            <h2>Illiterate Languages</h2>
+            <div class="languages">
+                <div>Cantonese</div>
+                <progress min="0" max="10" value="7"></progress>
+                <div>Mandarin</div>
+                <progress min="0" max="10" value="3"></progress>
+            </div>
+        </section>
+
+        <section>
+            <h2>Soft skills</h2>
+            <div class="soft-skills">
+                <div>Willingness to learn</div>
+                <progress min="0" max="10" value="10"></progress>
+
+                <div>Patience</div>
+                <progress min="0" max="10" value="10"></progress>
+
+                <div>Adaptability to New Technologies</div>
+                <progress min="0" max="10" value="7"></progress>
+            </div>
+        </section>
+
+        <section>
+            <h2>Hard skills</h2>
+            <div class="hard-skills">
+                <div>Google Docs</div>
+                <progress min="0" max="10" value="5"></progress>
+
+                <div>Google Sheets</div>
+                <progress min="0" max="10" value="3"></progress>
+
+                <div>Google Slides</div>
+                <progress min="0" max="10" value="3"></progress>
+
+            </div>
+        </section>
+    </div>
+
+    <div>
+        <div>
+            <h1>Justin Chan Lok Hang</h1>
+            <img src="./Justin.jpg" alt="Image of Justin">
+            <h2>Web Developer</h2>
+
+            <div>
+                I am a full stack web developer. I am eager to learn and improve my practical skills during my time as a new hire.
+            </div>
+
+            <section>
+                <h2>Education</h2>
+                <section>
+                    <h3>Tunku Abdul Rahman University of Management and Technology</h3>
+                    <ul>
+                        <li>Currently in Final Year</li>
+                        <li>Final Year Project : Todo App</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>SMK Taman Bukit Maluri</h3>
+                    <ul>
+                        <li>2016 - 2021</li>
+                        <li>Science stream background</li>
+                    </ul>
+                </section>
+            </section>
+
+            <section>
+                <h2>Experience</h3>
+                <dl>
+                    <dt>Created a todo app</dt>
+                    <dd>I created a todo app because I want to put my web development skills to the test. 
+                        I learned a lot from creating the todo app such as how to do user authentication, how
+                        to manage sessions and also how to use the Indexed DB database.
+                    </dd>
+                </dl>
+
+                <dl>
+                    <dt>Created a snake game.</dt>
+                    <dd>I created a snake game that can work offline. It also has a variant called "With earthquakes",
+                        which is basically the classic snake game with some shaking of the game window. It also has an
+                        Artificial Intelligence that can play the game quite well.
+                    </dd>
+                </dl>
+            </section>
+
+            <section>
+                <h2>Curriculum Activity</h2>
+                <ul>
+                    <li>Was a member of Chess society and Geography society in secondary school</li>
+                    <li>Was the vice president of the Geography society in secondary school</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Programming Experience</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>TypeScript</li>
+                    <li>Go</li>
+                    <li>Sql</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Hobby</h2>
+                <ul>
+                    <dl>
+                        <dt>Play piano</dt>
+                        <dd>
+                            I enjoy playing pieces that are composed by Beethoven, Paul de Senneville
+                            and Olivier Toussaint.
+                        </dd>
+                    </dl>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+</body>
+</html>
